@@ -13,6 +13,7 @@ const path = require("path")
 
 app.use(cors({
     origin:"https://chatapphanumanji-frontend.onrender.com",
+    methods: ["GET", "POST"],
     credentials:true,
 }))
 
