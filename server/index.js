@@ -12,7 +12,7 @@ const path = require("path")
 
 
 app.use(cors({
-    origin:"http://localhost:3000",
+    origin:"https://chatapphanumanji-frontend.onrender.com",
     credentials:true,
 }))
 
