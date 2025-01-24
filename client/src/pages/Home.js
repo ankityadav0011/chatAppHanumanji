@@ -42,7 +42,7 @@ const Home = () => {
 
   /***socket connection */
   useEffect(()=>{
-    const socketConnection = io(`http://localhost:5009/`,{
+    const socketConnection = io(`${REACT_APP_BACKEND_URL}`,{
       auth : {
         token : localStorage.getItem('token')
       },
