@@ -13,7 +13,8 @@ const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
         origin: "https://chatapphanumanji-frontend.onrender.com",
-        credentials: true
+        methods: ["GET", "POST"],
+        credentials: true,
     }
 });
 
