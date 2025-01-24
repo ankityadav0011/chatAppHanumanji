@@ -43,6 +43,7 @@ const Home = () => {
   /***socket connection */
   useEffect(()=>{
     const socketConnection = io(`${REACT_APP_BACKEND_URL}`,{
+      transports: ['websocket', 'polling'],
       auth : {
         token : localStorage.getItem('token')
       },
